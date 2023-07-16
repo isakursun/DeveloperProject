@@ -1,0 +1,478 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Russo+One&display=swap');
+
+* {
+    font-family: "Poppins";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.group {
+    position: relative;
+    background: radial-gradient(circle at 50% 50%, rgb(51,10,10),rgb(5,5,21));
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*Header start*/
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #39053163;
+    padding: 20px 50px;
+    z-index: 5;
+    position: fixed;
+}
+
+header .logo a {
+text-decoration: none;
+color: white;
+font-weight: 600;
+font-size: 25px;
+}
+header .logo a b{
+    color: #fd003b;
+}
+header .logo i{
+    color: white;
+    font-size: 25px;
+}
+.menu {
+    display: flex;
+    align-items: center;
+}
+.menu .menu-content{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.menu i{
+    display: none;
+}
+.menu .menu-content a{
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+.menu .menu-content a:hover{
+    color: #fd003b;
+}
+
+/*Navbar Start*/
+
+nav{
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 5;
+}
+nav .left{
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 10px;
+    padding: 0 50px;
+    color: white;
+}
+.animation{
+    color: #c0d666;
+    font-weight: 600;
+    font-size: 34px;
+    animation: anim1 4s ease-in-out 1s 1000;
+    width: 150px;
+    
+}
+@keyframes anim1{
+    0%{
+        transform: translateX(0%);
+    }
+    50%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+nav .left h1{
+    font-family: 'Russo One', sans-serif;
+    font-size: 46px;
+}
+nav .left button{
+    padding: 7px;
+    color: white;
+    background: transparent;
+    font-size: 20px;
+    border: 2px solid #cab2bb;
+}
+nav .left button:hover{
+    border-radius: 10px;
+    border: 2px solid rgb(94, 17, 94);
+    transition: ease .2s;
+}
+
+
+/*Social start*/
+
+.advert{
+    background-color: #39053163;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 5;
+    padding: 0 50px;
+}
+.icons{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        animation: reklam 3s ease-in ;
+        animation-iteration-count: infinite;
+}
+@keyframes reklam{
+    0%{
+        transform: translateX(10px);
+    }
+    50%{
+        transform: translateX(-10px);
+    }
+    100%{
+        transform: translateX(10px);
+    }
+}
+.advert img{
+    width: 40px;
+    cursor: pointer;
+}
+.bg{
+    position: absolute; 
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: .18;
+}
+
+/*Kartlar*/
+aside{
+    background-image:radial-gradient(rgba(0, 0, 0, 0.76) 40%,black), url(image/bg2.jpg);
+    background-size: cover;
+}
+aside h1{
+    font-size: 36px;
+    color: white;
+    padding-top: 30px;
+    text-align: center;
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+}
+.cards .card{
+    color: white;
+    width: 45%;
+    padding: 15px;
+    border: 0.2px solid rgb(79, 76, 76,0.5);
+    border-radius: 10px;
+}
+.cards .card:hover{
+    border: 0,2px solid rgba(214, 201, 201, 0.5);
+    background: radial-gradient(rgba(13, 12, 15, 0.9),black);
+}
+.card .card-title{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.card p{
+    font-weight: 200px;
+    margin-bottom: 20px;
+}
+.card button{
+    padding: 7px 15px;
+    font-size: 20px;
+    color: white;
+    background: transparent;
+    border: 4px solid #500523;
+    border-radius: 20px;
+}
+
+/*About Start*/
+
+article{
+    background: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+}
+article h1{
+    font-size: 36px;
+}
+article p{
+    margin-bottom: 40px;
+    color: #c13e73;
+    text-align: center;
+}
+.about{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    width: 100%;
+}
+.about .about-right{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 7px;
+}
+.about .about-right h2{
+    color: #c13e73;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.about-right button{
+    padding: 7px;
+    margin-top: 30px;
+    color: white;
+    background: linear-gradient(to left,#c13e73,#ee156c);
+    border-radius: 10px;
+    font-size: 15px;
+}
+.about .about-left{
+    width: 50%;
+    padding: 0 10%;
+}
+.about .about-left img{
+    width: 380px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+/*İletişim kısmı*/
+
+.contact{
+    background-color: black;
+    color: white;
+    display: flex;
+    width: 100%;
+}
+.contact .contact-left {
+    padding: 10px 40px;
+    width: 50%;
+}
+.contact .contact-left h1 b{
+    color: #fd003b94;
+}
+.contact .contact-left h5{
+    padding: 10px 0;
+}
+.contact .contact-left p{
+    padding: 15px 0;
+}
+.contact .contact-left .last{
+    color: gray;
+}
+.contact .contact-right{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.contact .contact-right .form{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+    height: 100%;
+}
+.contact .contact-right .form input{
+    height: 50px;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: rgba(128, 128, 128, 0.705);
+    color: rgba(214, 201, 201, 0.5);
+}
+textarea{
+    padding: 10px;
+    background-color: rgba(128, 128, 128, 0.705);
+    color: rgba(214, 201, 201, 0.5);
+    border-radius: 20px;
+}
+.contact-right .form .button{
+    border: 4px solid #c13e73;
+}
+button{
+    border-radius: 20px;
+    height: 50px;
+    width: 150px;
+    padding: 0 ;
+}
+.footer{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: #3a3636;
+}
+.footer .footer-left{
+    width: 45%;
+    padding: 50px 40px;
+    align-items: center;
+    justify-content: center;
+}
+.footer .footer-right{
+    width: 55%;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    padding: 70px 30px;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+footer .footer-right b{
+    color: black;
+}
+
+.footer-left .logo {
+    margin-bottom: 15px;
+}
+.footer-left .logo i{
+    color: white;
+    font-size: 25px;
+}
+.footer-left .logo a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+}
+.footer-left .logo a b{
+    color: #fd003b;
+}
+.footer-left .icons2{
+    margin-bottom: 20px;
+}
+.footer-left p{
+    font-weight: 600;
+    color: white;
+}
+
+
+
+/* Tablet için responsive ayarlar */
+@media screen  and (min-width: 768px) and (max-width:1023px){
+    
+    header .menu i{
+        display: flex;
+        color: white;
+        font-size: 25px;
+    }
+    header .menu .menu-content{
+        display: none;
+    }
+    header .menu:hover .menu-content{
+        display: flex;
+        flex-direction: column;
+        background-color: #ccc;
+        position: absolute;
+        top: 25px;
+        right: 0;
+        padding:10px ;
+        border-radius: 20px;
+    }
+    .menu-content a{
+        color: black !important;
+    }
+    .menu-content a:hover{
+        color: #fd003b !important;
+    }
+    header .menu{
+        position: relative;
+    }
+    .about{
+        flex-direction: column;
+    }
+    .about .about-left{
+        width: 50%;
+    }
+    .about .about-left img{
+        width: 100%;
+        height: 300px;
+    }
+    .about .about-right{
+        width: 80% ;
+    }
+    .about .about-right h2{
+        text-align: center;
+    }
+    .about .about-right button{
+        padding: 0 30px;
+    }
+    .footer-right .second-list{
+        margin-top: 90px;
+    }
+}
+
+/*Mobil için responsive ayarlar*/
+@media screen  and (max-width:767px){
+    header .menu i{
+        display: flex;
+        color: white;
+        font-size: 25px;
+    }
+    header .menu .menu-content{
+        display: none;
+    }
+    header .menu:hover .menu-content{
+        display: flex;
+        flex-direction: column;
+        background-color: #ccc;
+        position: absolute;
+        top: 25px;
+        right: 0;
+        padding:10px ;
+        border-radius: 20px;
+    }
+    .menu-content a{
+        color: black !important;
+    }
+    .menu-content a:hover{
+        color: #fd003b !important;
+    }
+    header .menu{
+        position: relative;
+    }
+    .cards .card{
+        width: 80%;
+    }
+    .about{
+        flex-direction: column;
+    }
+    .about .about-left{
+        width: 50%;
+    }
+    .about .about-left img{
+        width: 100%;
+        height: 300px;
+    }
+    .about .about-right{
+        width: 80% ;
+    }
+    .about .about-right h2{
+        text-align: center;
+    }
+    
+}
